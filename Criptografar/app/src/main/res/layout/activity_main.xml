@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple_500">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opet TDS5 Noite - Cifra de César"
+            android:textColor="@color/purple_500"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            style="@style/edit_text"/>
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/containerform"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/text_fraseOriginal"
+                style="@style/edit_text"
+                android:inputType="text"
+                android:hint="Digite sua frase aqui"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/text_fraseCript"
+                style="@style/edit_text"
+                android:inputType="text"
+                android:hint="Frase criptografada"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/text_valorChave"
+                    style="@style/edit_text"
+                    android:inputType="number"
+                    android:hint="valor da chave"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/Bt_criptografar"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bt_action"
+                    android:onClick="criptografa"
+                    android:text="Criptografar"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container2"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/containerform"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/text_fraseCrip1"
+                style="@style/edit_text"
+                android:inputType="text"
+                android:hint="Inclua a frase criptografda aqui"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/text_fraseDescript"
+                style="@style/edit_text"
+                android:inputType="text"
+                android:hint="Resultado da descriptografia"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/text_valorChave1"
+                    style="@style/edit_text"
+                    android:inputType="number"
+                    android:hint="valor da chave"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/Bt_Descriptografar"
+                    android:layout_width="212dp"
+                    style="@style/bt_action"
+                    android:layout_height="wrap_content"
+                    android:onClick="descriptografa"
+                    android:text="Descriptografar"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
