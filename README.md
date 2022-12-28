@@ -2,7 +2,7 @@
 
 ## Descrição.
 
-<p>APP Android, desenvolvido em JAVA para criptografia, utilizando o conceito da cifra de César (Projeto Academico). </p>
+<p>Aplicativo Android desenvolvido em JAVA, com finalidade de criptografar mensagens  utilizando o conceito da cifra de César (Projeto Academico). </p>
 
 ## Tecnologias.
 #### Linguagem : JAVA.
